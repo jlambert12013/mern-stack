@@ -1,0 +1,196 @@
+@import url('https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2');
+@import url('https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2');
+
+@font-face {
+	font-family: Gotham SSm;
+	src: url('https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Book_Web.woff2')
+		format('woff2');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Gotham SSm;
+	src: url('https://cdn-design.tesla.com/tds-fonts/x/woff2/GothamSSm-Medium_Web.woff2')
+		format('woff2');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+:root {
+	--text-dark: rgba(23, 26, 32, 0.75);
+	--text-light: rgb(255, 255, 255);
+	--text-darker: rgba(23, 26, 32, 0.9);
+	--background-color: rgb(255, 255, 255);
+	--btn-dark: rgba(23, 25, 28, 0.7);
+	--btn-light: rgb(255, 255, 255, 0.7);
+}
+
+.text-light {
+	color: var(--text-light);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gotham SSm', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, 'Helvetica Neue', Arial, sans-serif;
+	color: var(--text-dark);
+}
+
+a {
+	font-family: Gotham SSm;
+	font-style: normal;
+	font-weight: 400;
+	color: var(--text-dark);
+}
+h1 {
+	font-family: Gotham SSm;
+	font-weight: 500;
+	font-size: 40px;
+	letter-spacing: -0.6px;
+	color: var(--text-darker);
+	line-height: 1.1;
+	padding: 5px;
+}
+
+h4 {
+	font-family: Gotham SSm;
+	font-style: normal;
+	font-weight: 500;
+	color: var(--text-darker);
+	letter-spacing: -0.6px;
+}
+
+h4 a {
+	font-family: Gotham SSm;
+	font-style: normal;
+	font-weight: 500;
+	color: var(--text-darker);
+	letter-spacing: -0.6px;
+}
+
+.header {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	top: 0;
+	background-color: transparent;
+	width: 100vw;
+	height: 120px;
+}
+
+.topbar {
+	background-color: var(--background-color);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 50%;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+		rgba(0, 0, 0, 0.08) 0px 0px 0px 1.1px;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 50%;
+}
+
+.navbar a {
+	padding: 0 20px;
+}
+
+.navbar-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+.navbar-box:first-child {
+	justify-content: flex-start;
+}
+
+/* Hero Section  */
+.section-a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.3),
+			rgba(210, 210, 210, 0.1t)
+		),
+		url('../img/argo.jpg');
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 25%;
+	padding-right: 25%;
+	height: 100%;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.col {
+	width: 100%;
+	text-align: center;
+}
+
+.btn {
+	background-color: var(--btn-dark);
+	color: #fff;
+	border: none;
+	border-radius: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Gotham SSm;
+	font-weight: 500;
+	font-size: 12px;
+	width: 80%;
+	padding: 12px 10px;
+	background-color: var(--btn-dark);
+	cursor: pointer;
+}
+
+.btn-light {
+	background-color: var(--btn-light);
+	color: var(--text-dark);
+	border: none;
+	border-radius: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Gotham SSm;
+	font-weight: 500;
+	font-size: 12px;
+	width: 80%;
+	padding: 12px 10px;
+	cursor: pointer;
+}
+
+.navbar a {
+	text-decoration: none;
+	font-family: Gotham SSm;
+	font-style: normal;
+	font-weight: 500;
+	color: var(--text-darker);
+	letter-spacing: -0.7px;
+}

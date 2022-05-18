@@ -1,0 +1,10 @@
+{
+	"editor.fontSize": 15,
+
+	"workbench.activityBar.iconClickBehavior": "focus",
+	"workbench.editor.showIcons": true,
+	"editor.suggest.showIcons": false,
+	"editor.fontFamily": "Consolas, 'Courier New', monospace",
+	"json.schemas": [],
+	"editor.fontWeight": "normal"
+}

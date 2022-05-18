@@ -1,0 +1,159 @@
+:root {
+	--grey: rgba(23, 26, 32, 0.5);
+	--light-grey: rgba(244, 244, 244, 0.5);
+	--white: rgba(244, 244, 244, 0.83);
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-SemiBold.ttf');
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat-Medium.ttf');
+	font-weight: 200;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Montserrat';
+}
+
+h1 {
+	font-size: 5rem;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 2rem;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+	letter-spacing: -0.5px;
+}
+
+a:hover {
+	color: rgba(240, 240, 240, 0.9);
+	cursor: pointer;
+	transition-timing-function: ease-in;
+	transition: 0.2s;
+}
+
+header {
+	background-color: transparent;
+	position: absolute;
+}
+
+button {
+	background-color: var(--light-grey);
+	border: none;
+	border-radius: 25px;
+	padding: 12px 40px;
+	margin: 20px;
+	text-transform: capitalize;
+	color: #111;
+	font-weight: 200;
+}
+
+button:hover {
+	background-color: rgba(244, 244, 244, 0.8);
+	cursor: pointer;
+	transition-timing-function: ease-in;
+	transition: 0.2s;
+}
+
+/* header section */
+.topbar {
+	position: absolute;
+	top: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 16px;
+	box-shadow: 0px 15px 10px -15px rgba(17, 17, 17, 0.892);
+	font-weight: 100;
+	font-style: normal;
+}
+/* header section */
+.topbar a:hover {
+	color: var(--grey);
+}
+
+.topbar a {
+	text-decoration: underline;
+	letter-spacing: 0.5px;
+	color: rgb(26, 26, 26, 0.8);
+	font-size: 14px;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 15px;
+	width: 100%;
+}
+
+.column {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.column:first-child {
+	width: 25%;
+	justify-content: right;
+}
+
+.column:last-child {
+	width: 25%;
+	justify-content: left;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 75%;
+}
+
+/* Hero section  */
+#hero {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: linear-gradient(rgba(40, 40, 40, 0.6), rgba(0, 0, 0, 0.7)),
+		url('../img/argo.jpg');
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	height: 100%;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	color: #d6d6d6cd;
+}
+
+.info {
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
